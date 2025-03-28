@@ -22,7 +22,7 @@ Bu döküman, web tabanlı IMP3 Oynatıcı uygulamasının Android APK'sına dö
    - Kısa ad: IMP3
    - Versiyon kodu: 1
    - Versiyon adı: 1.0.0
-   - İkon: icons klasöründeki icon.png dosyasını seçin
+   - Not: İkon için manifest.json dosyasında belirtilen çevrimiçi ikon bağlantısı kullanılacaktır
 5. "Build" butonuna tıklayın ve APK indirilecektir.
 
 ### 2. Yöntem: Bubblewrap CLI ile APK Oluşturma
@@ -57,6 +57,16 @@ Bu döküman, web tabanlı IMP3 Oynatıcı uygulamasının Android APK'sına dö
 6. İkon ayarlarını yapın ve "Finish" tıklayarak projeyi oluşturun.
 7. `Build > Generate Signed Bundle/APK` menüsünden APK oluşturun.
 
+## Önemli: Web Sunucusuna Yükleme
+
+Uygulamanızı APK'ya dönüştürmeden önce mutlaka bir web sunucusuna yüklemeniz gerekmektedir. Ücretsiz hosting seçenekleri:
+
+1. **Netlify**: https://www.netlify.com - Dosyaları sürükleyip bırakarak veya Git repo bağlayarak yükleme
+2. **Vercel**: https://vercel.com - GitHub, GitLab veya Bitbucket reponuzu bağlayarak otomatik dağıtım
+3. **GitHub Pages**: Uygulamanızı GitHub repo'nuzda yayınlayabilirsiniz
+
+Yüklediğiniz uygulamanın HTTPS desteği olduğundan emin olun, aksi halde PWA Builder uygulamanızı işleyemez.
+
 ## Notlar
 
 - Bu uygulama, telefonun dosya sistemine erişmek için TWA çerezleri üzerinden izin ister.
@@ -67,7 +77,7 @@ Bu döküman, web tabanlı IMP3 Oynatıcı uygulamasının Android APK'sına dö
 
 - PWA'lar belirli kısıtlamalar nedeniyle doğrudan telefon dosya sistemine erişim sağlayamaz. 
 - Kullanıcı dosya seçici aracılığıyla müzik dosyalarını uygulamaya yüklemelidir.
-- Gerçek bir telefon uygulaması gibi dosya sistemi erişimi sağlamak için, tamamen native bir uygulama geliştirmek gerekir (React Native, Flutter, Kotlin/Java vb. ile).
+- Gerçek bir telefon uygulaması gibi dosfa sistemi erişimi sağlamak için, tamamen native bir uygulama geliştirmek gerekir (React Native, Flutter, Kotlin/Java vb. ile).
 
 ## Ek Bilgiler
 

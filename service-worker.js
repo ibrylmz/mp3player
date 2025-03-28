@@ -1,11 +1,12 @@
-const CACHE_NAME = 'mp3-player-cache-v1';
+const CACHE_NAME = 'imp3-player-cache-v1';
 const urlsToCache = [
   '/',
   '/index.html',
   '/style.css',
   '/script.js',
   '/manifest.json',
-  'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css'
+  'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css',
+  'https://cdn.glitch.global/9d066a26-dbcb-4aa3-b1af-3cd69e2af5ba/music-icon.png?v=1648472509844'
 ];
 
 // Service Worker Kurulumu

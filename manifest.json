@@ -9,9 +9,10 @@
   "orientation": "portrait",
   "icons": [
     {
-      "src": "icons/icon.png",
+      "src": "https://cdn.glitch.global/9d066a26-dbcb-4aa3-b1af-3cd69e2af5ba/music-icon.png?v=1648472509844",
       "sizes": "72x72 96x96 128x128 144x144 152x152 192x192 384x384 512x512",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any maskable"
     }
   ]
 } 
