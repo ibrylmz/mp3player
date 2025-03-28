@@ -1,6 +1,6 @@
-# MP3 Oynatıcı Uygulaması
+# IMP3 Oynatıcı Uygulaması
 
-Bu basit MP3 Oynatıcı uygulaması, Web tarayıcınızda müzik dosyalarınızı oynatmanıza olanak tanır. Sadece HTML, CSS ve JavaScript kullanılarak geliştirilmiştir.
+Bu basit IMP3 Oynatıcı uygulaması, Web tarayıcınızda müzik dosyalarınızı oynatmanıza olanak tanır. Sadece HTML, CSS ve JavaScript kullanılarak geliştirilmiştir.
 
 ## Özellikler
 

@@ -1,6 +1,6 @@
-# MP3 Oynatıcı APK Oluşturma Talimatları
+# IMP3 Oynatıcı APK Oluşturma Talimatları
 
-Bu döküman, web tabanlı MP3 Oynatıcı uygulamasının Android APK'sına dönüştürülme adımlarını açıklamaktadır.
+Bu döküman, web tabanlı IMP3 Oynatıcı uygulamasının Android APK'sına dönüştürülme adımlarını açıklamaktadır.
 
 ## Gereksinimler
 
@@ -14,13 +14,15 @@ Bu döküman, web tabanlı MP3 Oynatıcı uygulamasının Android APK'sına dön
 
 1. [PWA Builder](https://www.pwabuilder.com/) web sitesini ziyaret edin.
 2. Uygulamanın URL'sini girin (web sunucusuna yüklenmiş olmalıdır).
+   - Örnek: https://sizin-web-siteniz.com (Uygulamanızı önce bir web sunucusuna yüklemelisiniz)
 3. "Build My PWA" butonuna tıklayın.
 4. Android seçeneğini seçin ve "Options" kısmından gereken bilgileri doldurun:
-   - Package ID: `com.myapp.mp3player`
-   - Uygulama adı: MP3 Oynatıcı
+   - Package ID: `com.myapp.imp3player`
+   - Uygulama adı: IMP3 Oynatıcı
+   - Kısa ad: IMP3
    - Versiyon kodu: 1
    - Versiyon adı: 1.0.0
-   - İkon: İkon dosyalarının bulunduğu klasörü seçin
+   - İkon: icons klasöründeki icon.png dosyasını seçin
 5. "Build" butonuna tıklayın ve APK indirilecektir.
 
 ### 2. Yöntem: Bubblewrap CLI ile APK Oluşturma
@@ -32,7 +34,7 @@ Bu döküman, web tabanlı MP3 Oynatıcı uygulamasının Android APK'sına dön
 
 2. Projenizi hazırlayın:
    ```
-   bubblewrap init --manifest https://sizinsite.com/manifest.json
+   bubblewrap init --manifest https://sizin-web-siteniz.com/manifest.json
    ```
 
 3. Ayarları yapılandırın:
@@ -49,7 +51,7 @@ Bu döküman, web tabanlı MP3 Oynatıcı uygulamasının Android APK'sına dön
 
 1. Android Studio'yu açın.
 2. Yeni bir proje oluşturun ve "Trusted Web Activity" şablonunu seçin.
-3. Uygulama adı ve paket adı (örn: `com.myapp.mp3player`) girin.
+3. Uygulama adı "IMP3 Oynatıcı" ve paket adı (örn: `com.myapp.imp3player`) girin.
 4. "Launch URL" alanına web uygulamanızın URL'sini girin (https ile başlamalı).
 5. Manifest dosyasını gösterin (uygulamanız web'de yayınlanmışsa).
 6. İkon ayarlarını yapın ve "Finish" tıklayarak projeyi oluşturun.

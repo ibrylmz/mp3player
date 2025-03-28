@@ -77,7 +77,7 @@ function setupInstallPrompt() {
         
         // Kullanıcıya uygulama yükleme seçeneği göster
         setTimeout(() => {
-            if (confirm("Bu MP3 Oynatıcıyı telefonunuza uygulama olarak yüklemek ister misiniz?")) {
+            if (confirm("IMP3 Oynatıcıyı telefonunuza uygulama olarak yüklemek ister misiniz?")) {
                 deferredPrompt.prompt();
                 deferredPrompt.userChoice.then((choiceResult) => {
                     if (choiceResult.outcome === 'accepted') {
@@ -394,7 +394,7 @@ function seekUpdate() {
 document.addEventListener('DOMContentLoaded', function() {
     if (isAndroid) {
         setTimeout(() => {
-            alert('Bu uygulamanın cihazınızdaki müzik dosyalarına erişmesi için "Müzik Seç" butonuna tıklayarak dosyalarınızı seçmeniz gerekmektedir. Android güvenlik sistemi, uygulamaların doğrudan dosya sistemine erişimine izin vermez.');
+            alert('IMP3 Oynatıcı uygulamasının cihazınızdaki müzik dosyalarına erişmesi için "Müzik Seç" butonuna tıklayarak dosyalarınızı seçmeniz gerekmektedir. Android güvenlik sistemi, uygulamaların doğrudan dosya sistemine erişimine izin vermez.');
         }, 1000);
     }
 });
